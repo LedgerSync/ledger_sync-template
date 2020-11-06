@@ -2,22 +2,12 @@
 
 [ledgersync.dev](www.ledgersync.dev)
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'ledger_sync-template_ledger'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install ledger_sync-template_ledger
-
 ## Usage
 
-Please visit [ledgersync.dev](www.ledgersync.dev) for full documentation, guidelines, and contribution help.
+This template ledger enables you to easily create your own ledger for public or private use. Although this is not an
+exhaustive list, a good place to start assuming your ledger name is `NewLedger`:
+
+1. Find and replace all `TEMPLATE_LEDGER` with `NEW_LEDGER`
+2. Find and replace all `TemplateLedger` with `NewLedger`
+3. Find and replace all `template_ledger` with `new_ledger`
+4. Find and replace all `Template Ledger` with `New Ledger`
