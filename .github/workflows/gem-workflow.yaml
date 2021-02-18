@@ -1,4 +1,4 @@
-name: Gem Workflow
+name: Test and Deploy
 on: [push, pull_request]
 jobs:
   rubocop:
@@ -60,3 +60,4 @@ jobs:
           gem push *.gem
         env:
           GEM_HOST_API_KEY: "${{ secrets.RUBY_GEM_KEY }}"
+          
