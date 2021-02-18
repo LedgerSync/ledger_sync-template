@@ -17,4 +17,4 @@ exhaustive list, a good place to start assuming your ledger name is `NewLedger`:
 4. Find and replace all `Template Ledger` with `New Ledger`
 5. Find and replace all `template_ledger` directories and files with `new_ledger`
 6. Remove `SampleResource` example files.
-7. Create a `RUBY_GEM_KEY` secret for publishing the GEM.
+7. Create a Repository Secret with key `RUBY_GEM_KEY`. This is for Github Actions to publish the GEM. [How to create a Github Actions Reposiotry Secret.](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
