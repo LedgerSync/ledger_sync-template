@@ -20,11 +20,7 @@ RSpec.shared_examples 'a template_ledger operation' do
     case described_class.operation_method
     when :create
       resource.ledger_id = nil
-    when :delete
-      resource.ledger_id = template_ledger_records.send(record).id
-    when :find
-      resource.ledger_id = template_ledger_records.send(record).id
-    when :update
+    when :delete, :find, :update
       resource.ledger_id = template_ledger_records.send(record).id
     end
   end
