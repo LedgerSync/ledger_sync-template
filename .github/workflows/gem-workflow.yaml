@@ -35,7 +35,7 @@ jobs:
           bundler-cache: true
       - name: rspec and report to coveralls
         env:
-          COVERALLS_REPO_TOKEN: ${{ if (github.event_name == "push") && secrets.COVERALLS_REPO_TOKEN }}
+          COVERALLS_REPO_TOKEN: ${{ github.event_name == "push" && secrets.COVERALLS_REPO_TOKEN }}
         run: bundle exec rspec --order rand
   publish:
     runs-on: ubuntu-latest
