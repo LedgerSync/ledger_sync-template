@@ -19,7 +19,7 @@ jobs:
           bundler-cache: true
       - run: bundle exec rubocop
   rspec:
-    environment: Test
+    environment: test
     strategy:
       matrix:
         ruby-version: [2.6.3, 2.6.6, 2.7.1, head]
@@ -35,7 +35,7 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
-      - run: echo $COVERALLS_REPO_TOKEN
+      - run: echo ${{ env.COVERALLS_REPO_TOKEN }}
       - run: bundle exec rspec --order rand
   publish:
     runs-on: ubuntu-latest
